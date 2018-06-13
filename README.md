@@ -1,4 +1,17 @@
-# ActiveMQ & JMS
+# ActiveMQ
+
+## 下载安装
+ActiveMQ官网下载地址：http://activemq.apache.org/download.html
+
+ActiveMQ 提供了Windows 和Linux、Unix 等几个版本，楼主这里选择了Linux 版本下进行开发。
+
+进入到ActiveMQ 安装目录的Bin 目录，linux 下输入 ./activemq start 启动activeMQ 服务。 
+
+ActiveMQ默认启动时，启动了内置的jetty服务器，提供一个用于监控ActiveMQ的admin应用。 admin：_http://127.0.0.1:8161/admin/_。我们在浏览器打开链接之后输入账号密码（这里和tomcat 服务器类似），默认账号：_admin_，密码：_admin_。
+
+ActiveMQ 在linux 下的终止命令是 ./activemq stop
+
+## ActiveMQ & JMS 简介
 
 ActiveMQ是Apache所提供的一个开源的消息系统，完全采用Java来实现，因此，它能够很好地支持J2EE提出的JMS规范。JMS(Java Message Service, 即Java消息服务)是一组Java应用程序接口，它提供消息的创建/发送/接收/读取等一系列服务。JMS定义了一组公共应用程序接口和相应的语法，类似于Java数据库的统一访问接口 JDBC，它是一种与厂商无关的API，使得Java程序能够与不同厂商的消息组件很好地进行通信。
 
