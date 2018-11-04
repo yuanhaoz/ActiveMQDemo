@@ -18,6 +18,7 @@ public class TopicPublisher {
                 ActiveMQConnection.DEFAULT_PASSWORD,
                 ActiveMQConnection.DEFAULT_BROKER_URL
         );
+
         // 通过 ActiveMQConnectionFactory 来创建到 ActiveMQ 的连接，启动连接
         Connection connection = connectionFactory.createConnection();
         connection.start();
